@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./descuentos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Porcentajes y Descuentos | Curso Practico de JavaScript en JR</title>
+</head>
+<body>
+  <header>
+    <img id="logoHeader" src="https://i.imgur.com/DZihgP4.png" alt="logo">
+    <h1>
+      Percentage & Discounts
+    </h1>
+  </header>
+ 
+  <h2 id="calculaTitulo">Calculate discount</h2>
+ 
+  <section id="descuentoSection">
+    <form id="descuentoForm" action="">
+      <div id="inputPriceDiv">
+        <input id="inputPrice" type="number" placeholder="Insert Price" />
+      </div>
+     <div id="inputPriceDiv">
+      <input id="inputDiscount" type="number" placeholder="Insert Discount" />
+     </div>
+     <div id="inputPriceCupon">
+      <label for="inputDiscount" id="selectCupon">Select Cupon: </label>
+      <select class="cupons" name="cupons" id="inputCuponDiscount">
+        <option value="0">Don't</option>
+        <option value="10">10%</option>
+        <option value="20">20%</option>
+        <option value="40">40%</option>
+        <option value="80">80%</option>
+      </select>
+     </div>
+     <div id="inputPriceDiv">
+      <button id="buttom" type="button" onclick="onClickButtonPriceDiscount()">
+        Calculate
+      </button>
+     </div>
+    </form>
+  </section>
+
+  <section id="sectionProduct">
+    <div>
+      <h2>Product</h2>
+    </div>
+    <div>
+      <img id="imgIphone" src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-13-pro-max-sierra-blue-back.png" alt="iPhone13ProMax">
+    </div>
+    <div id="inputPriceRes">
+      <h3 id="resultP"></h3>
+    </div>
+  </section>
+  <script src="./descuentos.js"></script>
+</body>
+</html>
